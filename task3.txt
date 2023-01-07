@@ -2,10 +2,9 @@
 using namespace std;
 main()
 {
-float finalprice;
-float itemprice;
-float taxamount;
-float taxrate;
+int itemprice;
+int taxamount;
+int taxrate;
 cout <<"enter itemprice";
 cin >>itemprice;
 char vehicalcode;
@@ -31,7 +30,8 @@ if (vehicalcode=='T')
 { 
  taxrate=15;
 }
-cout <<"taxrate"<<taxrate;
+cout <<taxrate;
+int finalprice;
 taxamount=itemprice*(taxrate/100);
 cout <<"taxamount"<<taxamount<<endl;
 finalprice=itemprice+taxamount;
